@@ -15,5 +15,11 @@
         <module>algorithms</module>
         <module>deeplearning</module>
     </modules>
-
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub distributed-intelligent-labs Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/distributed-intelligence-lab/AutoAD4j</url>
+        </repository>
+    </distributionManagement>
 </project>
