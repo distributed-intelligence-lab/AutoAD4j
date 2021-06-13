@@ -31,6 +31,6 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Publish package
-        run: mvn --batch-mode deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: mvn --batch-mode deploy
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
