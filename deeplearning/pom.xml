@@ -13,8 +13,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>IFTM</groupId>
-            <artifactId>IFTM-anomalydetection-models</artifactId>
+            <groupId>distributed-intelligence-lab</groupId>
+            <artifactId>algorithms</artifactId>
             <version>0.0.1</version>
         </dependency>
         <dependency>
