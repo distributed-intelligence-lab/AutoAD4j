@@ -1,8 +1,9 @@
-package iftm.anomalydetection.automl.identityfunctions;
+package iftm.automl.identityfunctions;
 
 import iftm.anomalydetection.AnomalyDetection;
 import iftm.anomalydetection.IFTMAnomalyDetection;
-import iftm.anomalydetection.automl.UnsupervisedHyperParameterOptimization;
+import iftm.automl.UnsupervisedHyperParameterOptimization;
+import iftm.automl.thresholdmodel.ThresholdBreedingPart;
 import iftm.errorfunction.EuclideanError;
 import iftm.identityfunction.DL4JIdentityFunction;
 import iftm.thresholdmodel.OneSidedThreshold;

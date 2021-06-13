@@ -1,5 +1,10 @@
 import iftm.anomalydetection.AutoMLAnomalyDetection;
-import iftm.anomalydetection.automl.identityfunctions.*;
+import iftm.automl.identityfunctions.*;
+import iftm.automl.identityfunctions.AutoencoderBreeding;
+import iftm.automl.identityfunctions.AutoencoderLSTMBreeding;
+import iftm.automl.identityfunctions.LSTMBreeding;
+import iftm.automl.identityfunctions.VariationalAutoencoderBreeding;
+import iftm.automl.thresholdmodel.CompleteHistoryThresholdBreedingPart;
 import org.junit.Assert;
 import org.junit.Test;
 

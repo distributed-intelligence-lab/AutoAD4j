@@ -1,5 +1,6 @@
-package iftm.anomalydetection.automl.identityfunctions;
+package iftm.automl.identityfunctions;
 
+import iftm.automl.thresholdmodel.ThresholdBreedingPart;
 import iftm.identityfunction.DL4JIdentityFunction;
 import iftm.identityfunction.LSTMIdentityFunction;
 

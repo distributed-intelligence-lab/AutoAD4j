@@ -6,6 +6,7 @@
         <artifactId>AutoAD</artifactId>
         <version>0.0.1</version>
     </parent>
+    <groupId>distributed-intelligence-lab</groupId>
     <artifactId>algorithms</artifactId>
     <version>0.0.1</version>
     <packaging>jar</packaging>
