@@ -1,0 +1,11 @@
+/training/
+/target/
+.idea
+/*.iml
+/*.ipr
+/*.iws
+/*.csv
+/nbproject/
+lib/
+/deeplearning/deeplearning.iml
+/algorithms/algorithms.iml
