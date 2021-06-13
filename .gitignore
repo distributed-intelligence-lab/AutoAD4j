@@ -9,3 +9,5 @@
 lib/
 /deeplearning/deeplearning.iml
 /algorithms/algorithms.iml
+/deeplearning/target/
+/algorithms/target/
