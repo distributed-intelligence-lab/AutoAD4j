@@ -1,9 +1,9 @@
-# Unsupervised Anomaly Detection for High-frequent Data-Streams
+# Unsupervised Anomaly Detection with AutoML for High-frequent Data-Streams 
 
-This repository provides a framework to capture the IFTM modelling approach for anomaly detection.
+This repository provides a framework to capture the IFTM modelling approach for unsupervised anomaly detection.
 IFTM offers a variety of unsupervised anomaly detection algorithms for online data stream processing. It captures various known techniques from clustering, forecasting to deep learning, which capture complex normal models in an unsupervised manner. 
 The basic idea is, that you can model automatically the normal behaviour of any multivariate signal. 
-Assumed, that most data is normal, we consider constantly learning the signal and provide a reconstruction error, indicating the difference to the normal behaviour of the current appearing data. 
+Assumed, that most data are normal, we consider constantly learning the signal and provide a reconstruction error, indicating the difference to the normal behaviour of the current appearing data. 
 Thus, a dynamic threshold is learned in order to distinguish between reconstruction errors, which are too high indicating an abnormal behaviour.
 
 There exists a variaty of different functions, which can be used within this framework. All of those can be combined as you like to model your own unsupervised online anomaly detection algorithm.
@@ -73,3 +73,11 @@ https://ieeexplore.ieee.org/document/8456348
 
 ### Further papers and research:
 https://www.researchgate.net/profile/Florian_Schmidt13/research
+
+Additionally, the AutoML approach can be also used when avoiding timewaidting own hyperparamter optimization.
+AutoAD provides now this AutoML feature, so that you can through your data directly on your chosen IFTM algorithm and get a best performing model and results.
+It includes a novel optimization strategy to model best performing parameter selection for this unsupervised setting.
+
+Example of usage
+
+Please cite:...
