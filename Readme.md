@@ -8,7 +8,11 @@ Thus, a dynamic threshold is learned in order to distinguish between reconstruct
 
 There exists a variaty of different functions, which can be used within this framework. All of those can be combined as you like to model your own unsupervised online anomaly detection algorithm.
 
-## Quick start
+Additionally, the AutoML approach can be also used when avoiding timewaidting own hyperparamter optimization.
+AutoAD provides now this AutoML feature, so that you can through your data directly on your chosen IFTM algorithm and get a best performing model and results.
+It includes a novel optimization strategy to model best performing parameter selection for this unsupervised setting.
+
+## Quick start 
 ## Install
 
 Add to Maven projects pom.xml:
@@ -28,7 +32,19 @@ Add to Maven projects pom.xml:
     </repository>
 </repositories>
 ```
-## Usage
+
+## Simple Usage
+```java
+AutoMLAnomalyDetection detector = new AutoMLAnomalyDetection();
+
+double[] p1 = new double[]{0.0,0.3,2.0};
+DistancePredictionResult result = detector.trainAndPredict(p1);
+
+double[] p2 = new double[]{0.0,100.0,2.0};
+DistancePredictionResult result = detector.trainAndPredict(p2);
+```
+
+## Advanced Usage
 ```java
 IdentityFunction identityFunction = new OnlineArimaMulti(10,3,3);
 ErrorFunction errorFunction = new EuclideanError();
@@ -79,10 +95,4 @@ https://ieeexplore.ieee.org/document/8456348
 ### Further papers and research:
 https://www.researchgate.net/profile/Florian_Schmidt13/research
 
-Additionally, the AutoML approach can be also used when avoiding timewaidting own hyperparamter optimization.
-AutoAD provides now this AutoML feature, so that you can through your data directly on your chosen IFTM algorithm and get a best performing model and results.
-It includes a novel optimization strategy to model best performing parameter selection for this unsupervised setting.
 
-Example of usage
-
-Please cite:...
