@@ -10,18 +10,23 @@ There exists a variaty of different functions, which can be used within this fra
 
 ## Quick start
 ## Install
+
+Add to Maven projects pom.xml:
 ```
-git clone https://github.com/flohannes/IFTM-Anomaly-Detection.git
-cd IFTM-Anomaly-Detection
-mvn install
-```
-Add to Maven project:
-```
-<dependency>
-    <groupId>fschmidt</groupId>
-    <artifactId>IFTM-anomalydetection-models</artifactId>
-    <version>0.0.1</version>
-</dependency>
+<dependencies>
+    <dependency>
+        <groupId>com.github.distributed-intelligence-lab</groupId>
+        <artifactId>AutoAD4j</artifactId>
+        <version>v0.0.1</version>
+    </dependency>
+</dependencies>
+
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
 ```
 ## Usage
 ```java
